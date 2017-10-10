@@ -1014,7 +1014,7 @@ $(document).ready(function () {
             return;
         }
 		if (client_answer == answer){
-			alert("Верно!");
+			alert($questionSet[parseInt(document.getElementById("id").innerHTML, 10)].t);
 			return;
 		}
 		else{
