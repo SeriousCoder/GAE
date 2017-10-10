@@ -992,36 +992,6 @@ $(document).ready(function () {
         $thisTr.remove();
 
     });
-
-	//
-	//
-	//CHECK A ANSWER
-	//
-	//
-	
-	//By Nik
-	$("#checkAnswer").click(function (e) {
-        e.preventDefault();
-        client_answer = $("#clientAnswer").val();
-		answer = $("#answer").val();
-        //client_comment = $("#new_client_comment").val();
-        if (!client_answer || client_answer == "") {
-            alert("А где ответ?");
-            return;
-        }
-		if (client_answer == answer){
-			alert("Верно!");
-			return;
-		}
-		else{
-			alert("Не верно! Подумай еще.");
-			return;
-		}
-    });
-	
-	$(document).ready(function() {
-		$("#answer").hide();
-	});
 	
     //
     //
