@@ -15,7 +15,7 @@ class MainPage(webapp2.RequestHandler):
 		
 class CheckAnswer(webapp2.RequestHandler):
 	def get(self):
-		self.response.out.write(Lol)
+		self.response.out.write(answer)
 		
 application = webapp2.WSGIApplication([('/', MainPage),
 									   ('/checkAnswer/', CheckAnswer)])
