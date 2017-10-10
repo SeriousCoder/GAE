@@ -1017,7 +1017,7 @@ $(document).ready(function () {
 			return;
 		}
 		else{
-			alert($questionSet[$("#id").val()].f);
+			alert($questionSet[int($("#id").val())].f);
 			return;
 		}
     });
