@@ -5,9 +5,7 @@ from google.appengine.api import users
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-	template_values = {
-            'sometext': "Some text for test"}
-        path = os.path.join(os.path.dirname(__file__), 'foo.html')
-        self.response.out.write(template.render(path, template_values))
+	self.response.write(
+            '<html><body>{}</body></html>'.format(greeting))
 		
 application = webapp2.WSGIApplication([('/', MainPage)])
