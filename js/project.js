@@ -1003,7 +1003,7 @@ $(document).ready(function () {
 	$("#checkAnswer").click(function (e) {
         e.preventDefault();
         client_answer = $("#clientAnswer").val();
-		answer = $("#clientAnswer").val();
+		answer = $("#answer").val();
         //client_comment = $("#new_client_comment").val();
         if (!client_answer || client_answer == "") {
             alert("А где ответ?");
