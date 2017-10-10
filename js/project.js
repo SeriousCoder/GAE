@@ -1006,7 +1006,7 @@ $(document).ready(function () {
 	$("#checkAnswer").click(function (e) {
         e.preventDefault();
         client_answer = $("#clientAnswer").val();
-		answer = $questionSet[int($("#id").innerHTML)].answer;
+		answer = $questionSet[int(document.getElementById("id").innerHTML)].answer;
         //client_comment = $("#new_client_comment").val();
         if (!client_answer || client_answer == "") {
             alert("А где ответ?");
@@ -1017,7 +1017,7 @@ $(document).ready(function () {
 			return;
 		}
 		else{
-			alert($questionSet[int($("#id").innerHTML)].f);
+			alert($questionSet[int(document.getElementById("id").innerHTML)].f);
 			return;
 		}
     });
