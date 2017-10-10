@@ -6,13 +6,10 @@ function is_empty(obj) {
     return false;
 }
 
-$(document).ready(function() {
-	$("#id").hide();
-});
-
 $(document).ready(function () {
     var $questionSet = [{id: 1, answer: '000'}]
-
+	$("#id").hide();
+	
 	$("#checkAnswer").click(function (e) {
 		e.preventDefault();
 		client_answer = $("#clientAnswer").val();
