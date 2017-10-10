@@ -999,11 +999,14 @@ $(document).ready(function () {
 	//
 	//
 	
+	var $questionSet = [{id: 1, answer: '000'}]
+	$("#id").hide();
+	
 	//By Nik
 	$("#checkAnswer").click(function (e) {
         e.preventDefault();
         client_answer = $("#clientAnswer").val();
-		answer = $("#answer").val();
+		answer = $questionSet[0].answer;
         //client_comment = $("#new_client_comment").val();
         if (!client_answer || client_answer == "") {
             alert("А где ответ?");
