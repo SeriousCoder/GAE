@@ -993,6 +993,23 @@ $(document).ready(function () {
 
     });
 
+	//
+	//
+	//CHECK A ANSWER
+	
+	//By Nik
+	$("#checkAnswer").click(function (e) {
+        e.preventDefault();
+        client_answer = $("#clientAnswer").val();
+        //client_comment = $("#new_client_comment").val();
+        if (!client_answer || client_answer == "") {
+            alert("А где ответ?");
+            return;
+        }
+    });
+	
+	
+	
     //
     //
     //
