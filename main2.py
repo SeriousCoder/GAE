@@ -13,4 +13,9 @@ class MainPage(webapp2.RequestHandler):
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 		
-application = webapp2.WSGIApplication([('/', MainPage)])
+class CheckAnswer(webapp2.RequestHandler):
+	def get(self):
+		self.response.out.write(Lol)
+		
+application = webapp2.WSGIApplication([('/', MainPage),
+									   ('/checkAnswer/', CheckAnswer)])
