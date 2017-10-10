@@ -7,29 +7,7 @@ function is_empty(obj) {
 }
 
 $(document).ready(function () {
-    var $questionSet = [{id: 1, answer: '000'}]
-	$("#id").hide();
-	
-	$("#checkAnswer").click(function (e) {
-		e.preventDefault();
-		client_answer = $("#clientAnswer").val();
-		answer = $questionSet[$("#id")].answer;
-		//client_comment = $("#new_client_comment").val();
-		if (!client_answer || client_answer == "") {
-			alert("А где ответ?");
-			return;
-		}
-		if (client_answer == answer){
-			alert("Верно!");
-			return;
-		}
-		else{
-			alert("Не верно! Подумай еще.");
-			return;
-		}
-	});	
-	
-	//
+    //
     // Main menu handlers
     //
     $(".nav#main_menu > li > a").click(function (e) {
@@ -1014,6 +992,40 @@ $(document).ready(function () {
         $thisTr.remove();
 
     });
+	
+	
+	
+	//
+	//
+	//CHECK A ANSWER
+	//
+	//
+	
+	var $questionSet = [{id: 1, answer: '000'}]
+	$("#id").hide();
+	
+	$("#checkAnswer").click(function (e) {
+		e.preventDefault();
+		client_answer = $("#clientAnswer").val();
+		answer = $questionSet[$("#id")].answer;
+		//client_comment = $("#new_client_comment").val();
+		if (!client_answer || client_answer == "") {
+			alert("А где ответ?");
+			return;
+		}
+		if (client_answer == answer){
+			alert("Верно!");
+			return;
+		}
+		else{
+			alert("Не верно! Подумай еще.");
+			return;
+		}
+	});
+	
+	
+	
+	
 	
     //
     //
