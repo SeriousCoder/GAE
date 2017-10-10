@@ -1002,11 +1002,10 @@ $(document).ready(function () {
 	var $questionSet = [{answer: '180', f: 'Увы, до Тони Старка тебе далеко, попробуй ещё раз'}]
 	$("#id").hide();
 	
-	//By Nik
 	$("#checkAnswer").click(function (e) {
         e.preventDefault();
         client_answer = $("#clientAnswer").val();
-		answer = $questionSet[parseInt(document.getElementById("#id").innerHTML, 10)].answer;
+		answer = $questionSet[parseInt(document.getElementById("id").innerHTML, 10)].answer;
         //client_comment = $("#new_client_comment").val();
         if (!client_answer || client_answer == "") {
             alert("А где ответ?");
@@ -1017,7 +1016,7 @@ $(document).ready(function () {
 			return;
 		}
 		else{
-			alert($questionSet[parseInt(document.getElementById("#id").innerHTML, 10)].f);
+			alert($questionSet[parseInt(document.getElementById("id").innerHTML, 10)].f);
 			return;
 		}
     });
