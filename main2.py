@@ -8,7 +8,8 @@ import os
 class MainPage(webapp2.RequestHandler):
     def get(self):
 	template_values = {
-            'sometext': "Some text for test"}
+            'sometext': "Some text for test"
+			'answer' : "000"}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 		
