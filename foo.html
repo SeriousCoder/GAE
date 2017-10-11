@@ -67,7 +67,7 @@
 
 <body> 	
 	<p id='id'>{{id}}</p>
-	<b>{{ someQuestion }}</b>
+	<b>{{ someQuestion | safe | escape }}</b>
 	<br>
 	<br>
 	<br>
