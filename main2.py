@@ -44,7 +44,7 @@ class Question5(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "4",
-			'someQuestion' : "Решите уравнение (УРАВНЕНИЕ)"}
+			'someQuestion' : "Найдите <i>cos a</i> , если <i>sin 2a = -0.96</i> и <i>-1 < sin a < 0</i>. "}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 		
