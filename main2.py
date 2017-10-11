@@ -88,4 +88,5 @@ application = webapp2.WSGIApplication([('/Uyolanan'		, Question0),
 															('/Jallly'				, Question4),
 															('/Gixass'			, Question5),
 															('/Vaula'			, Question6),
-															('/Pona'				, Question7),])
+															('/Pona'				, Question7),
+															('/Cameeroya'	, Question8)])
