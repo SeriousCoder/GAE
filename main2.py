@@ -53,7 +53,7 @@ class Question5(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "5",
-			'someQuestion' : "Именно эти годовщины совместной жизни у супругов называются никелевой свадьбой. Чтобы получить ответ определите в какой точке будет находиться вершина параболы: <br> <i>Y =-2x<sup>2</sup>+48x-260</i>. <br>Ответ - два числа через запятую без пробелов"}
+			'someQuestion' : "Ты уже почти на финале!<br>Итак, снова задачка:<br>Именно эти годовщины совместной жизни у супругов называются никелевой свадьбой. Чтобы получить ответ, необходимо определить, в какой точке будет находиться вершина параболы: <br>Y =-2x2+48x-260. <br>В ответе укажи два числа через запятую и без пробелов"}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 	
@@ -61,7 +61,7 @@ class Question6(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "6",
-			'someQuestion' : "Найдите <i>cos a</i> , если <i>sin 2a = -0.96</i> и <i>-1 < sin a < 0</i>. "}
+			'someQuestion' : "Финал уже близко и пора дать тебе задачку посложнее!<br>Найдите cos a , если sin 2a = -0.96 и -1 < sin a < 0."}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 		
