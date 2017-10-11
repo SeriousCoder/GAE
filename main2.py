@@ -53,7 +53,7 @@ class Question5(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "5",
-			'someQuestion' : "Именно эти годовщины совместной жизни у супругов называются никелевой свадьбой. Чтобы получить ответ определите в какой точке будет находиться вершина параболы: <br> <i>Y =-2x<sup>2</sup>+48x-260</i>. <br>Ответ без пробелов."}
+			'someQuestion' : "Именно эти годовщины совместной жизни у супругов называются никелевой свадьбой. Чтобы получить ответ определите в какой точке будет находиться вершина параболы: <br> <i>Y =-2x<sup>2</sup>+48x-260</i>. <br>Ответ - два числа через запятую без пробелов"}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 	
