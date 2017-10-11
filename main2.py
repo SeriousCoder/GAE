@@ -45,7 +45,7 @@ class Question4(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "4",
-			'someQuestion' : "В организме человека содержится примерно 1 гекто кило микро мега нано грамм никеля. Так сколько миллиграмм никеля в теле человека? \nВ ответе только число."}
+			'someQuestion' : "В организме человека содержится примерно 1 Мега гекто деци нано грамм никеля. Так сколько миллиграмм никеля в теле человека? \nВ ответе только число."}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 
