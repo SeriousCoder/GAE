@@ -12,7 +12,7 @@ class Question0(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "0",
-			'someQuestion' : "Привет! Это небольшой интерактивный квест, в конце которого ты узнаешь много интересных фактов о Генеральном партнере форума - компании «Норникель» <br>Читай внимательно!<br>Полученная информация станет ключевым фактором твоей победы в викторине от компании, которая пройдёт в 17:30 на сцене после мастер-класса!<br>Начнем с простенького: <br>2+2*2=?"}
+			'someQuestion' : "Привет! Это небольшой интерактивный квест, в конце которого ты узнаешь много интересных фактов о Генеральном партнере форума - компании \"Норникель\" <br>Читай внимательно!<br>Полученная информация станет ключевым фактором твоей победы в викторине от компании, которая пройдёт в 17:30 на сцене после мастер-класса!<br>Начнем с простенького: <br>2+2*2=?"}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 
@@ -52,10 +52,6 @@ class Question4(webapp2.RequestHandler):
 class Question5(webapp2.RequestHandler):
     def get(self):
 	template_values = {
-<<<<<<< HEAD
-            'id': "4",
-			'someQuestion' : "Найдите <i>cos a</i> , если <i>sin 2a = -0.96</i> и <i>-1 < sin a < 0</i>. "}
-=======
             'id': "5",
 			'someQuestion' : "Именно эти годовщины совместной жизни у супругов называются никелевой свадьбой. Чтобы получить ответ определите в какой точке будет находиться вершина параболы: <br> <i>Y =-2x<sup>2</sup>+48x-260</i>. <br>Ответ - два числа через запятую без пробелов"}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
@@ -65,8 +61,7 @@ class Question6(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "6",
-			'someQuestion' : "Решите уравнение (УРАВНЕНИЕ)"}
->>>>>>> ef721d615a91dab744262fb0be7da3d58f5d3d1f
+			'someQuestion' : "Найдите <i>cos a</i> , если <i>sin 2a = -0.96</i> и <i>-1 < sin a < 0</i>. "}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 		
@@ -87,11 +82,11 @@ class Question8(webapp2.RequestHandler):
         self.response.out.write(template.render(path, template_values))
 		
 application = webapp2.WSGIApplication([('/Uyolanan'		, Question0),
-															('/Swemankar'	, Question1),
-															('/Lanadl'			, Question2),
-															('/Slarrac'			, Question3),
-															('/Jallly'				, Question4),
-															('/Gixass'			, Question5),
-															('/Vaula'			, Question6),
-															('/Pona'				, Question7),
-															('/Cameeroya'	, Question8)])
+									('/Swemankar'	, Question1),
+									('/Lanadl'			, Question2),
+									('/Slarrac'			, Question3),
+									('/Jallly'				, Question4),
+									('/Gixass'			, Question5),
+									('/Vaula'			, Question6),
+									('/Pona'				, Question7),
+									('/Cameeroya'	, Question8)])
