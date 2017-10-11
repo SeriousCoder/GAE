@@ -29,7 +29,7 @@ class Question2(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "2",
-			'someQuestion' : "В одном мобильном телефоне содержится примерно 9мг палладия. Тони Старку потребовалось 1,6 грамм палладия, чтобы создать свой мини-реактор для Железного Человека. <br>Сколько телефонов ему понадобилось?"}
+			'someQuestion' : "В одном мобильном телефоне содержится примерно 9мг палладия. Тони Старку потребовалось 1,6 грамм палладия, чтобы создать свой мини-реактор для Железного Человека. \nСколько телефонов ему понадобилось?"}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 		
@@ -37,7 +37,7 @@ class Question3(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "3",
-			'someQuestion' : "Этот человек известен своей любовью к альтернативным источникам питания, а ещё он уничтожит ДВС и отправит нас на марс. Постарайся написать максимально точно по-русски."}
+			'someQuestion' : "Этот человек известен своей любовью к альтернативным источникам питания, а ещё он уничтожит ДВС и отправит нас на марс. Постарайся написать максимально точно по-русски имя этого человека."}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 		
@@ -45,7 +45,7 @@ class Question4(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "4",
-			'someQuestion' : "В организме человека содержится примерно 1 гекто кило микро мега нано грамм никеля. Так сколько миллиграмм никеля в теле человека? Ответ только число."}
+			'someQuestion' : "В организме человека содержится примерно 1 гекто кило микро мега нано грамм никеля. Так сколько миллиграмм никеля в теле человека? \nВ ответе только число."}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 
@@ -53,7 +53,7 @@ class Question5(webapp2.RequestHandler):
     def get(self):
 	template_values = {
             'id': "5",
-			'someQuestion' : "Именно эти годовщины совместной жизни у супругов называются никелевой свадьбой. Чтобы получить ответ определите в какой точке будет находиться вершина параболы (КВАДРАТИЧНАЯ ФУНКЦИЯ)"}
+			'someQuestion' : "Именно эти годовщины совместной жизни у супругов называются никелевой свадьбой. Чтобы получить ответ определите в какой точке будет находиться вершина параболы <i>Y =-2x<sup>2</sup>+48x-260</i>. Ответ без пробелов."}
         path = os.path.join(os.path.dirname(__file__), 'foo.html')
         self.response.out.write(template.render(path, template_values))
 	
